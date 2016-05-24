@@ -1,0 +1,35 @@
+name:                servant-base
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/algas/servant-base#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Masahiro Yamauchi
+maintainer:          sgt.yamauchi@gmail.com
+copyright:           2016 Masahiro Yamauchi
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base
+                     , text
+                     , aeson
+                     , transformers
+                     , http-client
+                     , http-client-tls
+                     , lens
+                     , wai
+                     , warp
+                     , servant
+                     , servant-client
+                     , servant-server
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/algas/servant-base
