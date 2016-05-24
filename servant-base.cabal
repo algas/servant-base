@@ -24,6 +24,7 @@ library
                      , http-client-tls
                      , lens
                      , wai
+                     , wai-logger
                      , warp
                      , servant
                      , servant-client
